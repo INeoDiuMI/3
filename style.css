@@ -1,0 +1,199 @@
+ body{
+        margin: 0;
+        overflow-x: hidden;
+        background-color: rgb(228 228 228);
+        font-family: system-ui;
+    }
+
+.contain{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    margin-left: 5%;
+}
+
+nav a:hover{
+    color: darkred;
+}
+
+.Header{
+    order: 1;
+    height: 150px;
+    background: url(backim2.png) repeat-x center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fot{
+    order: 6;
+    height: 150px;
+    background: url(backim2.png) repeat-x center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_h{
+    font-weight: bolder;
+    font-size: larger;
+    margin-right: 5%;
+}
+
+nav{
+    order: 2;
+    height: 250px;
+    justify-content: space-around;
+    background: rgb(208 208 208);
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    font-size: xx-large;
+    margin-left: 5%;
+    color: rgb(255, 149, 211);
+    text-decoration-line: none;
+}
+
+.list{
+    order: 3;
+}
+
+.formm{
+    order: 4;
+}
+
+/*таблица*/
+.tab{
+    order: 5;
+    border-spacing: 5px;
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    border: 1px snow;
+    border-collapse: separate;
+}
+
+.tab td{
+    padding: 1%;
+    text-align: center;
+}
+
+.odd{
+    background-color: #bebebe;
+}
+
+/*таблица конец*/
+
+.formm label{
+    margin-left: 5%;
+}
+
+.formm input{
+    margin-left: 5%;
+}
+
+.p_form{
+    margin-left: 5%;
+}
+
+.imagine{
+    width: 80%;
+}
+ 
+/*для остального*/
+/*345px*/
+
+/*500px*/
+
+@media screen and (max-width:375px) {
+    .contain{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (min-width:500px){
+
+.imagine{
+    width: 100%;
+}
+
+.Header{
+    order: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.text_h{
+    font-weight: bolder;
+    font-size: xxx-large;
+    position: relative;
+    text-align: center;
+}
+
+.Header img{
+    float: left;
+    right: 70%;
+    margin: 1%;
+    top: auto;
+}
+
+nav{
+    order: 0;
+    height: auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+nav a{
+    margin-left: 0;
+    line-height: 200%;
+    text-decoration: none;
+    font-size: 150%;
+    display: inline-block;
+    text-align: center;
+    color: rgb(255 92 182);
+}
+
+.list{
+    order: 0;
+    width: 500px;
+    margin: auto;
+}
+
+.formm{
+    order: 0;
+    width: 500px;
+    margin: auto;
+}
+
+.tab{
+    order: 0;
+}
+
+tr:hover td{
+background-color: rgb(240, 198, 255);
+}
+
+.fot{
+    order: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+}
